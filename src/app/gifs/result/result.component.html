@@ -7,13 +7,15 @@
 
 <div class="row">
     <div *ngFor="let gif of results" 
-    class="col-md-4 col-sm-6">
+    class="col-md-4 col-sm-6 animate__animated animate__fadeInRight animate_faster">
         <div class="card">
+            <img [src]="gif.images.downsized_still.url" [alt]="gif.title"
+            class="card-img-top">
             <div class="card-body">
                 <p class="card-text">
-                    {{gif.images.downsized_medium.url}}
+                    {{gif.title}}
                 </p>
             </div>
         </div>
     </div>
-</div>
+</div> 

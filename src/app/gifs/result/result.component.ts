@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
   ]
 })
 export class ResultComponent {
-  get results ():any{
+  get results (){
     return this.gifsService.results
   }
 
